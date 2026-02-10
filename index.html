@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <style>
+/* TARJETA */
+.owl-menu-item .card {
+  height: 320px;
+  position: relative;      /* referencia para el precio */
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    135deg,
+    #ff6ec4,
+    #7873f5,
+    #4facfe,
+    #43e97b,
+    #f9d423
+  );
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* PRECIO */
+.owl-menu-item .price {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff3d00;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+  z-index: 9999;           /* 👈 SIEMPRE encima */
+}
+
+/* IMAGEN */
+.owl-menu-item .card img {
+  height: 240px;
+  width: 100%;
+  object-fit: contain;
+  background: rgba(255,255,255,0.9);
+  padding: 12px;
+  position: relative;
+  z-index: 1;              /* debajo del precio */
+}
+
+/* INFO */
+.owl-menu-item .info {
+  flex-grow: 1;
+  padding: 15px;
+  color: #fff;
+  min-height: 160px;
+}
+</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>FUXION -NUTRICIÓN CELULAR</title>
+<!--
+    
+TemplateMo 558 Klassy Cafe
+
+<p>Diseño: <a href="http://ifuxion.com/FRANCYrIVERA" target="_blank">Francy Rivera</a></p>
+
+-->
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/templatemo-klassy-cafe.css">
+
+    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    
+<style>
+/* ==============================
+   BANNER PRINCIPAL (arcoíris)
+============================== */
+#top .left-content {
+  background-image: linear-gradient(
+    135deg,
+    #66bb6a,  /* verde */
+    #42a5f5,  /* azul */
+    #ab47bc,  /* morado */
+    #ffa726,  /* naranja */
+    #ef5350   /* rojo */
+  ) !important;
+  color: #ffffff;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.35);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+/* ==============================
+   FONDO GENERAL DE TODA LA PLANTILLA
+   VERDE + AZUL + NARANJA TIPO FUXION
+============================== */
+body {
+  background: linear-gradient(
+    180deg,
+    #43a047,  /* verde brillante */
+    #1e88e5,  /* azul vivo */
+    #ffa726   /* naranja vibrante */
+  );
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+/* SECCIONES PRINCIPALES */
+.section,
+#about,
+#menu,
+#chefs,
+#reservation,
+#offers {
+  background: linear-gradient(
+    180deg,
+    #43a047,  /* verde brillante */
+    #1e88e5,  /* azul vivo */
+    #ffa726   /* naranja vibrante */
+  ) !important;
+  color: #ffffff; /* texto blanco para contraste */
+  padding: 60px 0;
+  border-radius: 8px; /* suaviza bordes de las secciones */
+  margin-bottom: 20px; /* separación entre secciones */
+}
+
+/* FOOTER */
+footer {
+  background: linear-gradient(
+    180deg,
+    #1b5e20,  /* verde oscuro */
+    #0d47a1,  /* azul oscuro */
+    #f57c00   /* naranja fuerte */
+  );
+  color: #ffffff;
+  padding: 40px 0;
+  text-align: center;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Enlaces del footer */
+footer a {
+  color: #ffffff !important;
+  text-decoration: none;
+  font-weight: bold;
+}
+</style>
+</style>
+    </head>
+     <body>
+    
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+    
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                           <img src="assets/images/Captura37.JPG" alt="Fuxion Logo" style="height: 120px; width: auto;">
+                
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#top" class="active">PÁGINA INICIAL</a></li>
+                            <li class="scroll-to-section"><a href="#about">QUIÉNES SOMOS</a></li>
+                           	
+                        <!-- 
+                            <li class="submenu">
+                                <a href="javascript:;">Drop Down</a>
+                                <ul>
+                                    <li><a href="#">Drop Down Page 1</a></li>
+                                    <li><a href="#">Drop Down Page 2</a></li>
+                                    <li><a href="#">Drop Down Page 3</a></li>
+                                </ul>
+                            </li>
+                        -->
+                            <li class="scroll-to-section"><a href="#menu">PRODUCTOS</a></li>
+                            <li class="scroll-to-section"><a href="#chefs">BENEFICIOS</a></li> 
+                            <li class="submenu">
+                                <a href="javascript:;">RESULTADOS</a>
+                                <ul>
+                                    <li><a href="#">PROPIEDADES</a></li>
+                                    <li><a href="#">COMPOSICIÓN</a></li>
+                                    <li><a href="#">¿CÓMO FUNCIONA?</a></li>
+                                    <li><a href="#">RESULTADOS</a></li>
+                                </ul>
+                            </li>
+                            <!-- <li class=""><a rel="sponsored" href="https://templatemo.com" target="_blank">External URL</a></li> -->
+                            <li class="scroll-to-section"><a href="#reservation">CONTACTOS</a></li> 
+                        </ul>        
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Main Banner Area Start ***** -->
+    <div id="top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="left-content">
+                        <div class="inner-content">
+                            <h4>BIENESTAR TOTAL</h4>
+                            <div class="main-white-button scroll-to-section">
+                                <a href="#reservation">TRANSFORMA TU VIDA CON FUXION</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="main-banner header-text">
+                        <div class="Modern-Slider">
+                          <!-- Item -->
+                          <div class="item">
+                            <div class="img-fill">
+                                <img src="assets/images/Captura.PNG" alt="">
+                            </div>
+                          </div>
+                          <!-- // Item -->
+                          <!-- Item -->
+                          <div class="item">
+                            <div class="img-fill">
+                             <img src="assets/images/slide-02.jpg" alt="">
+                            </div>
+                          </div>
+                          <!-- // Item -->
+                          <!-- Item -->
+                          <div class="item">
+                            <div class="img-fill">
+                                <img src="assets/images/Captura33.JPG" alt="">
+                            </div>
+                          </div>
+                          <!-- // Item -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ***** Main Banner Area End ***** -->
+
+    <!-- ***** About Area Starts ***** -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div class="left-text-content">
+                        <div class="section-heading">
+                            <h6>Nuestra Historia</h6>
+                            <h2>Una huella positiva en tu vida</h2>
+                        </div>
+                        <p>Bienestar inteligente con el poder de la naturaleza.t <a href="https://templatemo.com/tag/restaurant" target="_blank" rel="sponsored">plantilla web profesional</a> Un sitio pensado para conectar con tu bienestar, mostrando lo mejor de Fuxion de forma clara, atractiva y moderna. <br><br>Aquí comienza tu camino hacia una vida más saludable, con nutrición inteligente y productos diseñados para cuidar de ti.</p>
+                        <div class="row">
+                            <div class="col-3">
+                 <img src="assets/images/Captura2.JPG" alt="">
+                            </div>
+                            <div class="col-3">
+                            <img src="assets/images/Captura38.JPG" alt="">
+                            </div>
+                            <div class="col-3">
+                             <img src="assets/images/Captura4.JPG" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div class="right-content">
+                        <div class="thumb">
+                            <div class="position-relative overflow-hidden" style="height: 400px;">
+    <img src="assets/images/Captura28.JPG" alt="Descripción de la imagen" class="img-fluid h-170" style="object-fit: cover;">
+</div>
+        </div>
+    </section>
+    <!-- ***** About Area Ends ***** -->
+
+    <!-- ***** Menu Area Starts ***** -->
+    <section class="section" id="menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="section-heading">
+                        <h6>Portafolio Fuxion</h6>
+                        <h2>Elige sentirte bien todos los días</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-item-carousel">
+            <div class="col-lg-20">
+                <div class="owl-menu-item owl-carousel">
+                    <div class="item">
+                        <div class='card card'>
+                              <img src="assets/images/Captura19.JPG" alt="Klassy Pancake" class="img-fluid">
+                              
+<div class="price"><h4>$138,100</h4></div>
+    <div class='info'>
+        <p class='description'>Alpha Balance de Fuxion es una bebida funcional a base de vegetales verdes que sirve para desintoxicar el cuerpo.</p>
+                              <div class="main-text-button">
+                                  <div class="scroll-to-section"><a href="#reservation">Más información <i class="fa fa-angle-down"></i></a></div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class='card card'>
+                             <img src="assets/images/Captura8.JPG" alt="Klassy Pancake" class="img-fluid">
+                          <div class="price"><h4>$138.100</h4></div>
+                            <div class='info'>
+                              <p class='description'>Rexet de Fuxion es un suplemento dietario que apoya la desintoxicación y protección del hígado, ayudando al bienestar digestivo. No es un medicamento.</p>
+                              <div class="main-text-button">
+                                  <div class="scroll-to-section"><a href="#reservation">Haz tu pedido <i class="fa fa-angle-down"></i></a></div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class='card card'>
+                               <img src="assets/images/Captura1.PNG" alt="Klassy Pancake" class="img-fluid">
+                            <div class="price"><h4>$151,900</h4></div>
+                            <div class='info'>
+                              <p class='description'>Fuxion OFF es una bebida funcional diseñada para reducir el estrés, la ansiedad y mejorar la concentración y la relajación de forma natural,</p>
+                              <div class="main-text-button">
+                                  <div class="scroll-to-section"><a href="#reservation">“Haz tu pedido” <i class="fa fa-angle-down"></i></a></div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class='card card'>
+                              <img src="assets/images/Captura10.JPG" alt="Klassy Pancake" class="img-fluid">
+                            <div class="price"><h4>$179.400</h4></div>
+                            <div class='info'>
+                              <p class='description'>sirve principalmente para apoyar y mantener la salud del tracto urinario, prevenir molestias urinarias y la formación de bacterias,</p>
+                              <div class="main-text-button">
+                                  <div class="scroll-to-section"><a href="#reservation">“Haz tu pedido” <i class="fa fa-angle-down"></i></a></div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class='card card'>
+                              <img src="assets/images/Captura7.JPG" alt="Klassy Pancake" class="img-fluid">
+                            <div class="price"><h4>$138.100</h4></div>
+                            <div class='info'>
+                              <p class='description'>Suplemento funcional Fuxion que contribuye al equilibrio del cuerpo, la vitalidad diaria y una mejor nutrición celular..</p>
+                              <div class="main-text-button">
+                                  <div class="scroll-to-section"><a href="#reservation">“Haz tu pedido” <i class="fa fa-angle-down"></i></a></div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class='card card'>
+                             <img src="assets/images/Captura39.JPG" alt="Klassy Pancake" class="img-fluid">
+                            <div class="price"><h4>$138.100</h4></div>
+                            <div class='info'
+                              <p class='description'>Producto Fuxion enfocado en el bienestar y la nutrición celular.</p>
+                              <div class="main-text-button">
+                                  <div class="scroll-to-section"><a href="#reservation">“Haz tu pedido” <i class="fa fa-angle-down"></i></a></div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Menu Area Ends ***** -->
+
+    <!-- ***** Chefs Area Starts ***** -->
+    <section class="section" id="chefs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 offset-lg-4 text-center">
+                    <div class="section-heading">
+                        <h6>Vida Saludable</h6>
+                        <h2>Ingredientes naturales que transforman tu salud desde adentro</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="chef-item">
+                        <div class="thumb">
+                            <div class="overlay"></div>
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                            <img src="assets/images/Captura4.JPG" alt="Chef #1">
+                        </div>
+                        <div class="down-content">
+                            <h4>Bienestar que Transforma</h4>
+                            <span>Vida Saludable</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="chef-item">
+                        <div class="thumb">
+                            <div class="overlay"></div>
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                            </ul>
+                            <img src="assets/images/Captura5.JPG" alt="Chef #2">
+                        </div>
+                        <div class="down-content">
+                            <h4>Francy Rivera</h4>
+                            <span>Cuida tu Cuerpo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="chef-item">
+                        <div class="thumb">
+                            <div class="overlay"></div>
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google"></i></a></li>
+                            </ul>
+                            <img src="assets/images/Captura6.JPG" alt="Chef #3">
+                        </div>
+                        <div class="down-content">
+                            <h4>Francy Rivera</h4>
+                            <span>Suplementos Funcionales</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Chefs Area Ends ***** -->
+
+    <!-- ***** Reservation Us Area Starts ***** -->
+    <section class="section" id="reservation">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 align-self-center">
+                    <div class="left-text-content">
+                        <div class="section-heading">
+                            <h6>Comienza tu cambio ahora</h6>
+                            <h2>¡Haz tu pedido y siente la energía de Fuxion hoy!</h2>
+                        </div>
+                        <p>Potencia tu vitalidad y siente la diferencia con productos diseñados para cuidar tu cuerpo, apoyar tu salud y aumentar tu energía de manera natural. Cada día es una nueva oportunidad para sentirte increíble.</p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="phone">
+                                    <i class="fa fa-phone"></i>
+                                    <h4>Escríbenos o llámanos</h4>
+                                    <span><a href="#">311-366-1391</a><br><a href="#">311-366-1391</a></span>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="message">
+                                    <i class="fa fa-envelope"></i>
+                                    <h4>Emails</h4>
+                                
+  <span>
+  <a href="mailto:francyrivera43@gmail.com">francyrivera43@gmail.com</a><br>
+  <a href="mailto:francylorenarivera@yahoo.com">francylorenarivera@yahoo.com</a><br><br>
+
+  <a href="https://www.instagram.com/energy_fuxion" target="_blank">
+    Instagram: @energy_fuxion
+  </a><br>
+
+  <a href="https://www.tiktok.com/@francy.lorena.rivera" target="_blank">
+    TikTok: @francy.lorena.rivera
+  </a>
+</span>
+                            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-form">
+                        <form id="contact" action="" method="post">
+                          <div class="row">
+                            <div class="col-lg-12">
+                                <h4>Bienestar Inteligente</h4>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                              <fieldset>
+                                <input name="name" type="text" id="name" placeholder="Your Name*" required="">
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                              <fieldset>
+                              <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email Address" required="">
+                            </fieldset>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                              <fieldset>
+                                <input name="phone" type="text" id="phone" placeholder="Phone Number*" required="">
+                              </fieldset>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                              <fieldset>
+                                <select value="number-guests" name="number-guests" id="number-guests">
+                                    <option value="number-guests">Selecciona tu pedido</option>
+                                    <option name="1" id="1">1</option>
+                                    <option name="2" id="2">2</option>
+                                    <option name="3" id="3">3</option>
+                                    <option name="4" id="4">4</option>
+                                    <option name="5" id="5">5</option>
+                                    <option name="6" id="6">6</option>
+                                    <option name="7" id="7">7</option>
+                                    <option name="8" id="8">8</option>
+                                    <option name="9" id="9">9</option>
+                                    <option name="10" id="10">10</option>
+                                    <option name="11" id="11">11</option>
+                                    <option name="12" id="12">12</option>
+                                </select>
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-6">
+                                <div id="filterDate2">    
+                                  <div class="input-group date" data-date-format="dd/mm/yyyy">
+                                    <input  name="date" id="date" type="text" class="form-control" placeholder="dd/mm/yyyy">
+                                    <div class="input-group-addon" >
+                                      <span class="glyphicon glyphicon-th"></span>
+                                    </div>
+                                  </div>
+                                </div>   
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                              <fieldset>
+                                <select value="time" name="time" id="time">
+                                    <option value="time">Momento del día</option>
+                                    <option name="Breakfast" id="Breakfast">Energía Matutina</option>
+                                    <option name="Lunch" id="Lunch">Vitalidad Vespertina</option>
+                                    <option name="Dinner" id="Dinner">Relax Nocturno</option>
+                                </select>
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                              <fieldset>
+                                <textarea name="message" rows="6" id="message" placeholder="Message" required=""></textarea>
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                              <fieldset>
+                                <button type="submit" id="form-submit" class="main-button-icon">¡Haz tu pedido ahora!</button>
+                              </fieldset>
+                            </div>
+                          </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Reservation Area Ends ***** -->
+
+    <!-- ***** Menu Area Starts ***** -->
+    <section class="section" id="offers">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 offset-lg-4 text-center">
+                    <div class="section-heading">
+                        <h6>Semana de Bienestar</h6>
+                        <h2>Promociones Saludables de la Semana</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row" id="tabs">
+                        <div class="col-lg-12">
+                            <div class="heading-tabs">
+                                <div class="row">
+                                    <div class="col-lg-6 offset-lg-3">
+                                        <ul>
+                                          <li><a href='#tabs-1'><img src="assets/images/Captura31.JPG" alt="">Arranca con Energía</a></li>
+                                          <li><a href='#tabs-2'><img src="assets/images/Captura8.JPG" alt="">Recarga Tu Cuerpo</a></a></li>
+                                          <li><a href='#tabs-3'><img src="assets/images/Captura9.JPG" alt="">Cierra con Fuerza</a></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <section class='tabs-content'>
+                                <article id='tabs-1'>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="row">
+                                                <div class="left-list">
+                                                    <div class="col-lg-12">
+                                                        <div class="tab-item">
+                                                            <img src="assets/images/Captura10.JPG" alt="">
+                                                            <h4>Berry Balance</h4>
+                                                            <p>Favorece la salud urinaria, reduce molestias y retención de líquidos, equilibra el pH y aporta antioxidantes con arándanos, camu camu y probióticos.</p>
+                                                            <div class="price">
+                                                                <h6>$179.400</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="tab-item">
+                                                            <img src="assets/images/Captura15.JPG" alt="">
+                                                            <h4>BioProtect</h4>
+                                                            <p>Fortalece el sistema inmunológico y la salud general con antioxidantes, vitaminas y probióticos.”</p>
+                                                            <div class="price">
+                                                                <h6>$130.500</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="tab-item">
+                                                            <img src="assets/images/Captura2.JPG" alt="">
+                                                            <h4>Probix</h4>
+                                                            <p>Contribuye a la reducción de grasa abdominal y al mejor funcionamiento del metabolismo con probióticos y magnesio.</p>
+                                                            <div class="price">
+                                                                <h6>$138.100</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="row">
+                                                <div class="right-list">
+                                                    <div class="col-lg-12">
+                                                        <div class="tab-item">
+                                                            <img src="assets/images/Captura24.JPG" alt="">
+                                                            <h4>Thermo T3</h4>
+                                                            <p>Activa el metabolismo, quema grasa y aumenta la energía y resistencia física.</p>
+                                                            <div class="price">
+                                                                <h6>$138.100</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="tab-item">
+                                                            <img src="assets/images/Captura25.JPG" alt="">
+                                                            <h4>Nocarb-T</h4>
+                             <p>Promueve el equilibrio del peso y el colesterol.</p>
+                                                            <div class="price">
+                                                                <h6>$138.100</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="tab-item">
+                                                            <img src="assets/images/Captura14.JPG" alt="">
+                                                            <h4>Biopro+ Fi</h4>
+                                                            <p>Ayuda a controlar el peso, reducir grasa y tonificar músculos con bajo contenido calórico y proteínas.</p>
+                                                            <div class="price">
+                                                                <h6>$115.900</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>  
+                                <article id='tabs-2'>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="row">
+                                                <div class="left-list">
+                                                    <div class="col-lg-12">
+                                                        <div class="tab-item">
+                                                            <img src="assets/images/Captura23.JPG" alt="">
+                                                            <h4> Flora Liv</h4>
+                                                            <p>equilibra la flora intestinal, mejora la digestión y fortalece el sistema inmunológico con probióticos, fibra y extractos naturales.</p>
+                                                            <div class="price">
+                                                                <h6>$165.700</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="tab-item">
+                                                            <img src="assets/images/Captura19.JPG" alt="">
+                                                            <h4>Alpha Balance</h4>
+                                                            <p>desintoxica, equilibra el pH, mejora la digestión y aporta energía con vegetales verdes y minerales esenciales.</p>
+                                                            <div class="price">
+                                                                <h6>$138.100</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="tab-item">
+                                                            <img src="assets/images/tab-item-06.png" alt="">
+                                                            <h4>Omelette & Cheese</h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                                                            <div class="price">
+                                                                <h6>$22</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="row">
+                                                <div class="right-list">
+                                                    <div class="col-lg-12">
+                                                        <div class="tab-item">
+                                                            <img src="assets/images/tab-item-01.png" alt="">
+                                                            <h4>Fresh Chicken Salad</h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                                                            <div class="price">
+                                                                <h6>$10</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="tab-item">
+                                                            <img src="assets/images/tab-item-02.png" alt="">
+                                                            <h4>Orange Juice</h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                                                            <div class="price">
+                                                                <h6>$20</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="tab-item">
+                                                            <img src="assets/images/tab-item-03.png" alt="">
+                                                            <h4>Fruit Salad</h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                                                            <div class="price">
+                                                                <h6>$30</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>  
+                                <article id='tabs-3'>
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="row">
+                                                <div class="left-list">
+                                                    <div class="col-lg-12">
+                                                        <div class="tab-item">
+                                                            <img src="assets/images/tab-item-05.png" alt="">
+                                                            <h4>Eggs Omelette</h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                                                            <div class="price">
+                                                                <h6>$14</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="tab-item">
+                                                            <img src="assets/images/tab-item-03.png" alt="">
+                                                            <h4>Orange Juice</h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                                                            <div class="price">
+                                                                <h6>$18</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="tab-item">
+                                                            <img src="assets/images/tab-item-02.png" alt="">
+                                                            <h4>Fruit Salad</h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                                                            <div class="price">
+                                                                <h6>$10</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="row">
+                                                <div class="right-list">
+                                                    <div class="col-lg-12">
+                                                        <div class="tab-item">
+                                                            <img src="assets/images/tab-item-06.png" alt="">
+                                                            <h4>Fresh Chicken Salad</h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                                                            <div class="price">
+                                                                <h6>$8.50</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="tab-item">
+                                                            <img src="assets/images/tab-item-01.png" alt="">
+                                                            <h4>Dollma Pire</h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                                                            <div class="price">
+                                                                <h6>$9</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="tab-item">
+                                                            <img src="assets/images/tab-item-04.png" alt="">
+                                                            <h4>Omelette & Cheese</h4>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing elit, sed do.</p>
+                                                            <div class="price">
+                                                                <h6>$11</h6>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>   
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Chefs Area Ends ***** --> 
+    
+    <!-- ***** Footer Start ***** -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-xs-12">
+                    <div class="right-text-content">
+                            <ul class="social-icons">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="logo">
+                        <a href="index.html"><img src="assets/images/Captura40.JPG" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-xs-12">
+                    <div class="left-text-content">
+                        <p>
+  © 2026 Diseño y desarrollo web:
+  <a href="http://ifuxion.com/FRANCYrIVERA" target="_blank">Francy Rivera</a>
+</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/accordions.js"></script>
+    <script src="assets/js/datepicker.js"></script>
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script> 
+    <script src="assets/js/slick.js"></script> 
+    <script src="assets/js/lightbox.js"></script> 
+    <script src="assets/js/isotope.js"></script> 
+    
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+    <script>
+
+        $(function() {
+            var selectedClass = "";
+            $("p").click(function(){
+            selectedClass = $(this).attr("data-rel");
+            $("#portfolio").fadeTo(50, 0.1);
+                $("#portfolio div").not("."+selectedClass).fadeOut();
+            setTimeout(function() {
+              $("."+selectedClass).fadeIn();
+              $("#portfolio").fadeTo(50, 1);
+            }, 500);
+                
+            });
+        });
+
+    </script>
+  </body>
+</html>
